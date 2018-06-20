@@ -16,3 +16,10 @@
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Exo';
+  src: url('Exo20-Thin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
