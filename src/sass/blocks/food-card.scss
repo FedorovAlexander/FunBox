@@ -5,14 +5,17 @@
   background: linear-gradient(135deg, transparent 30px, #1698d9 30px);
   position: relative;
   border-radius: 10px;
+
   &__content {
     position: absolute;
+    box-sizing: border-box;
     top: 4px;
     left: 4px;
     width: 312px;
     height: 472px;
     background: linear-gradient(135deg, transparent 29px, white 29px);
     border-radius: 10px;
+    padding-left: 2.75rem;
     padding-top: 1rem;
   }
 }
