@@ -2,7 +2,7 @@
   background-color: #f2f2f2;
   width: 320px;
   height: 480px;
-  background: linear-gradient(135deg, transparent 20px, #1698d9 20px);
+  background: linear-gradient(135deg, transparent 30px, #1698d9 30px);
   position: relative;
   border-radius: 10px;
   &__content {
@@ -11,7 +11,8 @@
     left: 4px;
     width: 312px;
     height: 472px;
-    background: linear-gradient(135deg, transparent 20px, white 20px);
+    background: linear-gradient(135deg, transparent 29px, white 29px);
     border-radius: 10px;
+    padding-top: 1rem;
   }
 }
