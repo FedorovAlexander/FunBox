@@ -17,6 +17,17 @@
     border-radius: 10px;
     padding-left: 2.75rem;
     padding-top: 1rem;
+    :before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: block;
+      height: 56%;
+      width: 100%;
+      background: url(../img/cat.png);
+      background-repeat: no-repeat;
+    }
   }
   &__promo {
     color: $description-text-color;
