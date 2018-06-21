@@ -1,0 +1,17 @@
+.food-card {
+  background-color: #f2f2f2;
+  width: 320px;
+  height: 480px;
+  background: linear-gradient(135deg, transparent 20px, #1698d9 20px);
+  position: relative;
+  border-radius: 10px;
+  &__content {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 312px;
+    height: 472px;
+    background: linear-gradient(135deg, transparent 20px, white 20px);
+    border-radius: 10px;
+  }
+}
