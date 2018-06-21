@@ -3,7 +3,7 @@ body {
   margin: 0;
   color: $text-color;
   font-size: 16px;
-  height: 100%;
+  min-height: 100%;
   box-sizing: border-box;
 }
 .main-img {
@@ -11,7 +11,6 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  /* Preserve aspet ratio */
   min-width: 100%;
   min-height: 100%;
 }
