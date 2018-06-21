@@ -54,3 +54,8 @@
     font-size: 0.825rem;
     color: $description-text-color;
   }
+  &__weight {
+    position: absolute;
+    bottom: 0;
+  }
+}
