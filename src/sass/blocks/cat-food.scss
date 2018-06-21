@@ -1,6 +1,15 @@
 .cat-food {
-  background-image: url(../../img/pattern.png);
+  z-index: 100;
+  padding-top: 2.813rem;
+
   &__main-title {
+    margin-top: 0;
     font-family: 'Exo';
+    text-shadow: 0 1px 0 #000000;
+    color: #ffffff;
+    font-size: 1.75rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-weight: 400;
   }
 }
