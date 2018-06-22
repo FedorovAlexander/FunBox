@@ -66,6 +66,10 @@
     line-height: 0.9;
     padding-top: 18px;
     padding-bottom: 10px;
+  }
+  &__weight--default {
+    background-color: $color-default;
+  }
     bottom: 0;
   }
 }
