@@ -76,6 +76,9 @@
   &__weight--disabled {
     background-color: $color-disabled;
   }
+  &__weight-value {
+    font-size: 2.625rem;
+    line-height: 0.6;
     bottom: 0;
   }
 }
