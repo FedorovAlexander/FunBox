@@ -3,5 +3,8 @@
   justify-content: space-between;
   &__wrapper {
     position: relative;
+    flex: 1;
+    margin-left: 2.25rem;
+    margin-right: 2.25rem;
   }
 }
