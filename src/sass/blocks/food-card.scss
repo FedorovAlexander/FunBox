@@ -70,6 +70,9 @@
   &__weight--default {
     background-color: $color-default;
   }
+  &__weight--selected {
+    background-color: $color-active;
+  }
     bottom: 0;
   }
 }
