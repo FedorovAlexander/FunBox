@@ -73,6 +73,9 @@
   &__weight--selected {
     background-color: $color-active;
   }
+  &__weight--disabled {
+    background-color: $color-disabled;
+  }
     bottom: 0;
   }
 }
