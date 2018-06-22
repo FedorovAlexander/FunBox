@@ -5,7 +5,12 @@
   background: linear-gradient(135deg, transparent 30px, #1698d9 30px);
   position: relative;
   border-radius: 10px;
-
+  &--selected {
+    background: linear-gradient(135deg, transparent 30px, $color-active 30px);
+  }
+  &--disabled {
+    background: linear-gradient(135deg, transparent 30px, $color-disabled 30px);
+  }
   &__content {
     position: absolute;
     box-sizing: border-box;
