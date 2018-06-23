@@ -19,8 +19,12 @@
     letter-spacing: -0.5px;
     text-shadow: 0 0.063rem 0 #000000;
   }
+  &__text--stuffing {
+    display: none;
+  }
   &__text--highlight {
     color: $color-hghlight;
+    display: none;
   }
   &__text-link {
     color: $color-default;
