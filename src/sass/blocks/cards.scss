@@ -19,10 +19,7 @@
     letter-spacing: -0.5px;
     text-shadow: 0 0.063rem 0 #000000;
   }
-  &__text--stuffing {
-    display: none;
-  }
-  &__text--highlight {
+  &__text--out-of-stock {
     color: $color-hghlight;
     display: none;
   }
