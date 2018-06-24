@@ -1,7 +1,13 @@
 .cat-food {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: 100;
-  padding-top: 2.813rem;
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   &__main-title {
     margin-top: 0;
     margin-bottom: 1.5rem;
