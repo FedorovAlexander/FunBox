@@ -29,3 +29,10 @@
     text-decoration-style: dashed;
   }
 }
+@media (max-width: $screen-lg) {
+  .cards {
+    &__wrapper {
+      margin-bottom: 40px;
+    }
+  }
+}
