@@ -9,6 +9,9 @@
   &--selected {
     background: linear-gradient(135deg, transparent 30px, $color-active 30px);
   }
+  &--selected-hover {
+    background: linear-gradient(135deg, transparent 30px, $color-active-hover 30px);
+  }
   &--disabled {
     background: linear-gradient(135deg, transparent 30px, $color-disabled 30px);
   }
@@ -78,7 +81,7 @@
   &__weight--default {
     background-color: $color-default;
   }
-  &__weight--default:hover {
+  &__weight--default-hover {
     background-color: $color-default--hover;
   }
   &__weight--selected {
