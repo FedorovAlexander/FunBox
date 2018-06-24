@@ -1,6 +1,8 @@
 .cards {
+  overflow: hidden;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   &__wrapper {
     position: relative;
     flex: 1;
