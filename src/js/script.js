@@ -6,7 +6,8 @@ const buy = document.querySelectorAll('.cards__text-buy');
 const outOfStock = document.querySelectorAll('.cards__text--out-of-stock');
 
 buyLink.forEach(function(link, i) {
-  link.addEventListener('click', function() {
+  link.addEventListener('click', function(e) {
+    e.preventDefault()
     var weight = cards[i].querySelector('.food-card__weight')
     cards[i].classList.toggle('food-card--selected')
     weight.classList.toggle('food-card__weight--selected')
