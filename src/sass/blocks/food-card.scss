@@ -1,13 +1,17 @@
 .food-card {
-  margin: 0 auto;
+  position: relative;
+
   width: 320px;
   height: 480px;
-  position: relative;
-  border-radius: 10px;
+  margin: 0 auto;
+
   transition: all 1s linear;
+
+  border-radius: 10px;
   &--default {
-    background: linear-gradient(135deg, transparent 30px, $color-default 30px);
     transition: all 1s linear;
+
+    background: linear-gradient(135deg, transparent 30px, $color-default 30px);
   }
   &--selected {
     background: linear-gradient(135deg, transparent 30px, $color-active 30px);
@@ -24,15 +28,17 @@
   }
   &__content {
     position: absolute;
-    box-sizing: border-box;
     top: 4px;
     left: 4px;
+
+    box-sizing: border-box;
     width: 312px;
     height: 472px;
-    background: linear-gradient(135deg, transparent 29px, $color-card-bg 29px);
-    border-radius: 10px;
-    padding-left: 2.75rem;
     padding-top: 1rem;
+    padding-left: 2.75rem;
+
+    border-radius: 10px;
+    background: linear-gradient(135deg, transparent 29px, $color-card-bg 29px);
   }
   &__img {
     position: absolute;
@@ -40,47 +46,58 @@
     left: 0;
   }
   &__promo {
+    letter-spacing: 0.01px;
+
     color: $description-text-color;
+
     font-family: 'Open Sans_my';
     font-size: 1rem;
-    letter-spacing: 0.01px;
   }
   &__promo-cat {
     display: none;
+
     color: $color-active-hover;
   }
   &__title {
-    font-size: 2.875rem;
-    font-family: 'Open Sans_my';
     letter-spacing: -1px;
+
+    font-family: 'Open Sans_my';
+    font-size: 2.875rem;
   }
   &__stuffing {
-    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
     font-family: 'Open Sans_my';
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 0.9;
-    margin-bottom: 1rem;
   }
   &__description-item {
-    font-family: 'Open Sans_my';;
-    font-size: 0.825rem;
     color: $description-text-color;
+
+    font-family: 'Open Sans_my';
+    font-size: 0.825rem;;
   }
   &__weight {
     position: absolute;
-    box-sizing: border-box;
-    bottom: 3%;
     right: 4%;
+    bottom: 3%;
+
+    display: inline-block;
+
+    box-sizing: border-box;
     min-width: 5rem;
     min-height: 5rem;
-    font-family: 'Open Sans_my';
-    color: #fff;
-    border-radius: 5rem;
-    display: inline-block;
-    text-align: center;
-    line-height: 0.9;
     padding-top: 18px;
     padding-bottom: 10px;
+
+    text-align: center;
+
+    color: #fff;
+    border-radius: 5rem;
+
+    font-family: 'Open Sans_my';
+    line-height: 0.9;
   }
   &__weight--default {
     background-color: $color-default;
@@ -105,13 +122,15 @@
     font-size: 1.25rem;
   }
   &__disabled-layout--on {
-    z-index: 100;
     position: absolute;
+    z-index: 100;
     bottom: 0;
     left: 0;
+
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, transparent 29px, $color-card-bg 29px);
+
     opacity: 0.5;
+    background: linear-gradient(135deg, transparent 29px, $color-card-bg 29px);
   }
 }

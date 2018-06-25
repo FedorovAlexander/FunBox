@@ -1,31 +1,38 @@
 .cards {
-  overflow: hidden;
   display: flex;
+  overflow: hidden;
+
   justify-content: space-between;
   flex-wrap: wrap;
   &__wrapper {
     position: relative;
-    flex: 1;
-    margin-left: 2.25rem;
+
     margin-right: 2.25rem;
+    margin-left: 2.25rem;
+
+    flex: 1;
   }
   &__item--disabled {
     background-color: #f6f6f6;
   }
   &__text {
-    font-size: 0.813rem;
-    color: #fff;
-    font-family: 'Open Sans_my';
-    text-align: center;
     margin-top: 0.75rem;
+
+    text-align: center;
     letter-spacing: -0.5px;
+
+    color: #fff;
     text-shadow: 0 0.063rem 0 #000000;
+
+    font-family: 'Open Sans_my';
+    font-size: 0.813rem;
   }
   &__text--out-of-stock {
     color: $color-hghlight;
   }
   &__text-link {
     color: $color-default;
+
     text-decoration-style: dashed;
   }
 }
