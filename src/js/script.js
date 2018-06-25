@@ -12,6 +12,20 @@ buyLink.forEach(function(link, i) {
     weight.classList.toggle('food-card__weight--selected')
   })
 })
+cards.forEach(function(card, i) {
+  card.addEventListener('mouseover', function() {
+    var weight = cards[i].querySelector('.food-card__weight')
+    this.classList.add('food-card--hover')
+    weight.classList.add('food-card__weight--default-hover')
+  })
+})
+cards.forEach(function(card, i) {
+  card.addEventListener('mouseout', function() {
+    var weight = cards[i].querySelector('.food-card__weight')
+    this.classList.remove('food-card--hover')
+    weight.classList.remove('food-card__weight--default-hover')
+  })
+})
 
 function clickActive() {
   cards.forEach(function(card, i) {
