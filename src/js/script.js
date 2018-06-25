@@ -17,13 +17,14 @@ function clickActive() {
   cards.forEach(function(card, i) {
     const weight = card.querySelector('.food-card__weight')
 
-    // JQuery для проверки наличия класса (извините :))
+    // JQuery для проверки наличия класса
     if ($(outOfStock[i]).hasClass('js-active')) {
       return false;
     } else {
       card.addEventListener('click', function() {
         this.classList.toggle('food-card--selected')
-        this.classList.remove('food-card--hover')
+        // this.classList.remove('food-card--hover')
+        this.classList.toggle('food-card--default')
         weight.classList.toggle('food-card__weight--selected')
         stuff[i].classList.toggle('js-inactive')
         buy[i].classList.toggle('js-inactive')
