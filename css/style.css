@@ -57,7 +57,6 @@ body {
     margin-top: 0;
     margin-bottom: 1.5rem;
     text-align: center;
-    letter-spacing: 0.25px;
     color: #ffffff;
     text-shadow: 0 1px 0 #000000;
     font-family: 'Exo';
@@ -74,8 +73,8 @@ body {
       flex-wrap: wrap; }
   .cards__wrapper {
     position: relative;
-    margin-right: 2.25rem;
-    margin-left: 2.25rem;
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
     -ms-flex: 1;
         flex: 1; }
   .cards__item--disabled {
@@ -86,8 +85,8 @@ body {
     letter-spacing: -0.5px;
     color: #fff;
     text-shadow: 0 0.063rem 0 #000000;
-    font-family: 'Open Sans_my';
-    font-size: 0.813rem; }
+    font-family: 'Trebuchet MS';
+    font-size: 0.875rem; }
   .cards__text--out-of-stock {
     color: #ffff66; }
   .cards__text-link {
@@ -120,7 +119,7 @@ body {
     box-sizing: border-box;
     width: 312px;
     height: 472px;
-    padding-top: 1rem;
+    padding-top: 1.125rem;
     padding-left: 2.75rem;
     border-radius: 10px;
     background: linear-gradient(135deg, transparent 29px, #f2f2f2 29px); }
@@ -131,39 +130,42 @@ body {
   .food-card__promo {
     letter-spacing: 0.01px;
     color: #666666;
-    font-family: 'Open Sans_my';
+    font-family: 'Trebuchet MS';
     font-size: 1rem; }
   .food-card__promo-cat {
     display: none;
     color: #e62e7a; }
   .food-card__title {
-    letter-spacing: -1px;
-    font-family: 'Open Sans_my';
-    font-size: 2.875rem; }
+    font-family: 'Trebuchet MS';
+    font-size: 3rem;
+    margin-top: 5px;
+    margin-bottom: 3px; }
   .food-card__stuffing {
-    margin-bottom: 1rem;
-    font-family: 'Open Sans_my';
+    margin-bottom: 1.125rem;
+    font-family: 'Trebuchet MS';
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 0.9; }
   .food-card__description-item {
     color: #666666;
-    font-family: 'Open Sans_my';
-    font-size: 0.825rem; }
+    font-family: 'Trebuchet MS';
+    font-size: 0.875rem; }
+  .food-card__description-number {
+    font-weight: 700; }
   .food-card__weight {
     position: absolute;
-    right: 4%;
-    bottom: 3%;
+    right: 10px;
+    bottom: 12px;
     display: inline-block;
     box-sizing: border-box;
     min-width: 5rem;
     min-height: 5rem;
-    padding-top: 18px;
-    padding-bottom: 10px;
+    padding-top: 1.25rem;
+    padding-bottom: 0.625rem;
     text-align: center;
     color: #fff;
     border-radius: 5rem;
-    font-family: 'Open Sans_my';
+    font-family: 'Trebuchet MS';
     line-height: 0.9; }
   .food-card__weight--default {
     background-color: #1698d9; }
@@ -196,7 +198,7 @@ body {
   width: 64px;
   height: 64px; }
 
-@media (max-width: 1200px) {
+@media (max-width: 1240px) {
 
   .cat-food {
     position: relative;
