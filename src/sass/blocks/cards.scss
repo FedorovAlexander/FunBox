@@ -43,3 +43,19 @@
     }
   }
 }
+@media (max-width: $screen-md) {
+  .cards {
+    &__wrapper {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+  }
+}
+@media (max-width: $screen-xs) {
+  .cards {
+    &__wrapper {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
