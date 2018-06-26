@@ -1,5 +1,5 @@
 .cat-food {
-  position: absolute;
+  position: relative;
   z-index: 100;
   top: 0;
   right: 0;
@@ -26,8 +26,11 @@
 }
 @media (max-width: $screen-lg) {
   .cat-food {
-    position: relative;
-
     padding-top: 50px;
+  }
+}
+@media (min-width: $screen-lg) {
+  .cat-food {
+    position: absolute;
   }
 }
