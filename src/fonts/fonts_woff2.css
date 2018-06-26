@@ -3,7 +3,7 @@
 Будет обработан при сборке: в url() будет подставлена base64 кодированная версия указанного файла
 */
 
-@font-face {
+/* @font-face {
   font-family: 'Open Sans_my';
   src: url('opensans.woff2') format('woff');
   font-weight: normal;
@@ -15,4 +15,4 @@
   src: url('opensans_bold.woff2') format('woff');
   font-weight: bold;
   font-style: normal;
-}
+} */
