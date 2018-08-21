@@ -8,18 +8,13 @@
   src: url('Trebuchet-MS.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
-
-/* @font-face {
-  font-family: 'Open Sans_my';
-  src: url('opensans_bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-} */
 
 @font-face {
   font-family: 'Exo';
   src: url('Exo20-Thin.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
