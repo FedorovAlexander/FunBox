@@ -1,13 +1,13 @@
 @import 'variables.scss';
 
 @import 'global.scss';
-@import 'sprite.scss';
+// @import 'sprite.scss';
 @import 'blocks/container.scss';
 @import 'blocks/cat-food.scss';
 @import 'blocks/cards.scss';
 @import 'blocks/food-card.scss';
 
-@include sprites($spritesheet-sprites)
+// @include sprites($spritesheet-sprites)
 
 // .chrome {
 //   .sprite(@chrome);
