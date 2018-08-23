@@ -5,29 +5,6 @@ const stuff = document.querySelectorAll('.cards__text--stuffing');
 const buy = document.querySelectorAll('.cards__text-buy');
 const outOfStock = document.querySelectorAll('.cards__text--out-of-stock');
 
-buyLink.forEach(function(link, i) {
-  link.addEventListener('click', function(e) {
-    e.preventDefault()
-    var weight = cards[i].querySelector('.food-card__weight')
-    cards[i].classList.toggle('food-card--selected')
-    weight.classList.toggle('food-card__weight--selected')
-  })
-})
-// cards.forEach(function(card, i) {
-//   card.addEventListener('mouseover', function() {
-//     var weight = cards[i].querySelector('.food-card__weight')
-//     this.classList.add('food-card--hover')
-//     weight.classList.add('food-card__weight--default-hover')
-//   })
-// })
-// cards.forEach(function(card, i) {
-//   card.addEventListener('mouseout', function() {
-//     var weight = cards[i].querySelector('.food-card__weight')
-//     this.classList.remove('food-card--hover')
-//     weight.classList.remove('food-card__weight--default-hover')
-//   })
-// })
-
 function clickActive() {
   cards.forEach(function(card, i) {
     const weight = card.querySelector('.food-card__weight')
@@ -38,13 +15,48 @@ function clickActive() {
     } else {
       card.addEventListener('click', function() {
         this.classList.toggle('food-card--selected')
-        // this.classList.remove('food-card--hover')
         this.classList.toggle('food-card--default')
+        this.classList.toggle('food-card--selected-hover')
+        this.classList.remove('food-card--hover')
         weight.classList.toggle('food-card__weight--selected')
+        weight.classList.toggle('food-card__weight--selected-hover')
         stuff[i].classList.toggle('js-inactive')
         buy[i].classList.toggle('js-inactive')
+        clickCheckAndHover()
       })
     }
   })
 }
 clickActive()
+clickCheckAndHover()
+
+function clickCheckAndHover() {
+  cards.forEach(function(card) {
+    const weight = card.querySelector('.food-card__weight')
+
+    if ($(card).hasClass('food-card--selected')) {
+      card.addEventListener('mouseover', function() {
+        this.classList.remove('food-card--hover')
+        this.classList.add('food-card--selected-hover')
+        weight.classList.add('food-card__weight--selected-hover')
+      })
+      card.addEventListener('mouseout', function() {
+        this.classList.remove('food-card--selected-hover')
+        weight.classList.remove('food-card__weight--selected-hover')
+      })
+    } else if ($(card).hasClass('food-card--default')) {
+      card.addEventListener('mouseover', function() {
+        this.classList.add('food-card--hover')
+        this.classList.remove('food-card--selected-hover')
+        weight.classList.add('food-card__weight--default-hover')
+        weight.classList.remove('food-card__weight--selected-hover')
+      })
+      card.addEventListener('mouseout', function() {
+        this.classList.remove('food-card--hover')
+        weight.classList.remove('food-card__weight--default-hover')
+      })
+    } else {
+      return false
+    }
+  })
+}
