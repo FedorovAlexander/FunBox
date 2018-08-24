@@ -22,6 +22,8 @@ function clickActive() {
         weight.classList.toggle('food-card__weight--selected-hover')
         stuff[i].classList.toggle('js-inactive')
         buy[i].classList.toggle('js-inactive')
+        this.querySelector('.food-card__promo-food').classList.toggle('js-inactive')
+        this.querySelector('.food-card__promo-cat').classList.toggle('js-active')
         clickCheckAndHover()
       })
     }
@@ -39,10 +41,14 @@ function clickCheckAndHover() {
         this.classList.remove('food-card--hover')
         this.classList.add('food-card--selected-hover')
         weight.classList.add('food-card__weight--selected-hover')
+        this.querySelector('.food-card__promo-food').style.display = 'none'
+        this.querySelector('.food-card__promo-cat').style.display = 'block'
       })
       card.addEventListener('mouseout', function() {
         this.classList.remove('food-card--selected-hover')
         weight.classList.remove('food-card__weight--selected-hover')
+        this.querySelector('.food-card__promo-food').style.display = 'block'
+        this.querySelector('.food-card__promo-cat').style.display = 'none'
       })
     } else if ($(card).hasClass('food-card--default')) {
       card.addEventListener('mouseover', function() {
@@ -50,6 +56,8 @@ function clickCheckAndHover() {
         this.classList.remove('food-card--selected-hover')
         weight.classList.add('food-card__weight--default-hover')
         weight.classList.remove('food-card__weight--selected-hover')
+        this.querySelector('.food-card__promo-food').style.display = 'block'
+        this.querySelector('.food-card__promo-cat').style.display = 'none'
       })
       card.addEventListener('mouseout', function() {
         this.classList.remove('food-card--hover')
