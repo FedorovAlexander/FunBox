@@ -34,6 +34,19 @@
     color: $color-default;
 
     text-decoration-style: dashed;
+
+    &:hover {
+      color: $color-default--hover;
+    }
+    &:visited {
+      color: $color-default--hover;
+    }
+    &:active {
+      color: $color-hghlight;
+    }
+    &:focus {
+      color: $color-hghlight;
+    }
   }
 }
 @media (max-width: $screen-lg) {
