@@ -9,6 +9,8 @@
   transition: all 1s linear;
 
   border-radius: 10px;
+
+  cursor: pointer;
   &--default {
     transition: all 1s linear;
 
@@ -23,6 +25,7 @@
   }
   &--disabled {
     background: linear-gradient(135deg, transparent 30px, $color-disabled 30px);
+    cursor: not-allowed;
   }
   &--hover {
     background: linear-gradient(135deg, transparent 30px, $color-default--hover 30px);
