@@ -6,19 +6,15 @@
   height: 480px;
   margin: 0 auto;
 
-  transition: all 1s linear;
-
   border-radius: 10px;
 
   cursor: pointer;
   &--default {
-    transition: all 1s linear;
 
     background: linear-gradient(135deg, transparent 30px, $color-default 30px);
   }
   &--selected {
     background: linear-gradient(135deg, transparent 30px, $color-active 30px);
-    // transition: all 1s linear;
   }
   &--selected-hover {
     background: linear-gradient(135deg, transparent 30px, $color-active-hover 30px);
