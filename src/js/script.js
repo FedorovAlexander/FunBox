@@ -1,13 +1,13 @@
-const cards = document.querySelectorAll('.cards__item');
-const buyLink = document.querySelectorAll('.cards__text-link');
-const cardText = document.querySelectorAll('.cards__text');
-const stuff = document.querySelectorAll('.cards__text--stuffing');
-const buy = document.querySelectorAll('.cards__text-buy');
-const outOfStock = document.querySelectorAll('.cards__text--out-of-stock');
+var cards = document.querySelectorAll('.cards__item');
+var buyLink = document.querySelectorAll('.cards__text-link');
+var cardText = document.querySelectorAll('.cards__text');
+var stuff = document.querySelectorAll('.cards__text--stuffing');
+var buy = document.querySelectorAll('.cards__text-buy');
+var outOfStock = document.querySelectorAll('.cards__text--out-of-stock');
 
 function clickActive() {
   cards.forEach(function(card, i) {
-    const weight = card.querySelector('.food-card__weight')
+    var weight = card.querySelector('.food-card__weight')
 
     // JQuery для проверки наличия класса
     if ($(outOfStock[i]).hasClass('js-active')) {
@@ -34,7 +34,7 @@ clickCheckAndHover()
 
 function clickCheckAndHover() {
   cards.forEach(function(card) {
-    const weight = card.querySelector('.food-card__weight')
+    var weight = card.querySelector('.food-card__weight')
 
     if ($(card).hasClass('food-card--selected')) {
       card.addEventListener('mouseover', function() {
