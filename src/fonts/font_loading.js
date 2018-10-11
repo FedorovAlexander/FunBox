@@ -1,4 +1,4 @@
-// Подгрущка шрифтов
+// Подгрузка шрифтов
 function loadFont(fontName, woffUrl, woff2Url) {
   // 0. Многие неподдерживаемые браузеры должны останавливать работу тут.
   var nua = navigator.userAgent;
