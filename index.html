@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <script>
@@ -90,41 +91,46 @@
   </script>
   <noscript><link rel="stylesheet" href="css/fonts_woff.css"></noscript>
   <link rel="icon" type="image/x-icon" href="img/favicon-cat.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <meta name="Description" content="Cat food">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Покорми кота</title>
 </head>
+
 <body>
-  <img src="img/pattern.png" alt="pattern" class="main-img">
-  <img src="img/shadow.png" alt="pattern" class="main-img">
-  <section class="cat-food">
-    <div class="container">
-      <h1 class="cat-food__main-title">Ты сегодня покормил кота?</h1>
-      <div class="cards">
-        <div class="cards__wrapper">
-          <div class="cards__item food-card food-card--default" tabindex="0">
-            <div class="food-card__content">
-              <div class="food-card__disabled-layout"></div>
-              <img src="img/cat.png" alt="cat" class="food-card__img">
-              <p class="food-card__promo food-card__promo-food">Сказочное заморское яство</p>
-              <p class="food-card__promo food-card__promo-cat">Котэ не одобряет?</p>
-              <h2 class="food-card__title">Нямушка</h2>
-              <p class="food-card__stuffing">с фуа-гра</p>
-              <div class="food-card__description">
-                <p class="food-card__description-item"><span class="food-card__description-number">10</span> порций</p>
-                <p class="food-card__description-item">мышь в подарок</p>
-              </div>
-              <div class="food-card__weight food-card__weight--default"><p class="food-card__weight-value">0,5<br><span class="food-card__weight-units">кг</span></p></div>
-            </div>
-          </div>
-          <p class="cards__text cards__text--stuffing js-inactive">Печень утки разварная с артишоками.</p>
-          <p class="cards__text cards__text-buy">Чего сидишь? Порадуй котэ, <a href="#" class="cards__text-link" tabindex="0">купи.</a></p>
-          <p class="cards__text cards__text--out-of-stock js-inactive">Печалька, с фуа-гра закончился.</p>
-        </div>
+  <main role="main">
+    <img src="img/pattern.png" alt="pattern" class="main-img">
+    <img src="img/shadow.png" alt="pattern" class="main-img">
+    <section class="cat-food">
+      <div class="container">
+        <h1 class="cat-food__main-title">Ты сегодня покормил кота?</h1>
+        <div class="cards">
           <div class="cards__wrapper">
-            <div class="cards__item food-card food-card--default" tabindex="0">
+            <article class="cards__item food-card food-card--default" tabindex="0" role="article" aria-role="Блюдо для котика №1">
+              <div class="food-card__content">
+                <div class="food-card__disabled-layout"></div>
+                <img src="img/cat.png" alt="cat" class="food-card__img">
+                <p class="food-card__promo food-card__promo-food">Сказочное заморское яство</p>
+                <p class="food-card__promo food-card__promo-cat">Котэ не одобряет?</p>
+                <h2 class="food-card__title">Нямушка</h2>
+                <p class="food-card__stuffing">с фуа-гра</p>
+                <div class="food-card__description">
+                  <p class="food-card__description-item"><span class="food-card__description-number">10</span> порций</p>
+                  <p class="food-card__description-item">мышь в подарок</p>
+                </div>
+                <div class="food-card__weight food-card__weight--default">
+                  <p class="food-card__weight-value">0,5<br><span class="food-card__weight-units">кг</span></p>
+                </div>
+              </div>
+            </article>
+            <p class="cards__text cards__text--stuffing js-inactive">Печень утки разварная с артишоками.</p>
+            <p class="cards__text cards__text-buy">Чего сидишь? Порадуй котэ, <a href="#" class="cards__text-link" tabindex="0">купи.</a></p>
+            <p class="cards__text cards__text--out-of-stock js-inactive">Печалька, с фуа-гра закончился.</p>
+          </div>
+          <div class="cards__wrapper">
+            <article class="cards__item food-card food-card--default" tabindex="0" role="article" aria-role="Блюдо для котика №2">
               <div class="food-card__content">
                 <div class="food-card__disabled-layout"></div>
                 <img src="img/cat.png" alt="cat" class="food-card__img">
@@ -136,37 +142,43 @@
                   <p class="food-card__description-item"><span class="food-card__description-number">40</span> порций</p>
                   <p class="food-card__description-item">2 мыши в подарок</p>
                 </div>
-                <div class="food-card__weight food-card__weight--default"><p class="food-card__weight-value">2<br><span class="food-card__weight-units">кг</span></p></div>
+                <div class="food-card__weight food-card__weight--default">
+                  <p class="food-card__weight-value">2<br><span class="food-card__weight-units">кг</span></p>
+                </div>
               </div>
-            </div>
-            <p class="cards__text cards__text--stuffing js-inactive">Головы щучьи с чесноком да свежайшая сёмгушка.</p>
-            <p class="cards__text cards__text-buy">Чего сидишь? Порадуй котэ, <a href="#" class="cards__text-link" tabindex="0">купи.</a></p>
-            <p class="cards__text cards__text--out-of-stock js-inactive">Печалька, с рыбой закончился.</p>
+            </article>
+              <p class="cards__text cards__text--stuffing js-inactive">Головы щучьи с чесноком да свежайшая сёмгушка.</p>
+              <p class="cards__text cards__text-buy">Чего сидишь? Порадуй котэ, <a href="#" class="cards__text-link" tabindex="0">купи.</a></p>
+              <p class="cards__text cards__text--out-of-stock js-inactive">Печалька, с рыбой закончился.</p>
           </div>
-        <div class="cards__wrapper">
-          <div class="cards__item cards__item--disabled food-card food-card--disabled" tabindex="0">
-            <div class="food-card__content">
-              <div class="food-card__disabled-layout food-card__disabled-layout--on"></div>
-              <img src="img/cat.png" alt="cat" class="food-card__img">
-              <p class="food-card__promo food-card__promo-food">Сказочное заморское яство</p>
-              <p class="food-card__promo food-card__promo-cat">Котэ не одобряет?</p>
-              <h2 class="food-card__title">Нямушка</h2>
-              <p class="food-card__stuffing">с курой</p>
-              <div class="food-card__description">
-                <p class="food-card__description-item"><span class="food-card__description-number">100</span> порций</p>
-                <p class="food-card__description-item">5 мышей в подарок</p>
-                <p class="food-card__description-item">заказчик доволен</p>
+          <div class="cards__wrapper">
+            <article class="cards__item cards__item--disabled food-card food-card--disabled" tabindex="0" role="article" aria-role="Блюдо для котика №3">
+              <div class="food-card__content">
+                <div class="food-card__disabled-layout food-card__disabled-layout--on"></div>
+                <img src="img/cat.png" alt="cat" class="food-card__img">
+                <p class="food-card__promo food-card__promo-food">Сказочное заморское яство</p>
+                <p class="food-card__promo food-card__promo-cat">Котэ не одобряет?</p>
+                <h2 class="food-card__title">Нямушка</h2>
+                <p class="food-card__stuffing">с курой</p>
+                <div class="food-card__description">
+                  <p class="food-card__description-item"><span class="food-card__description-number">100</span> порций</p>
+                  <p class="food-card__description-item">5 мышей в подарок</p>
+                  <p class="food-card__description-item">заказчик доволен</p>
+                </div>
+                <div class="food-card__weight food-card__weight--disabled">
+                  <p class="food-card__weight-value">5<br><span class="food-card__weight-units">кг</span></p>
+                </div>
               </div>
-              <div class="food-card__weight food-card__weight--disabled"><p class="food-card__weight-value">5<br><span class="food-card__weight-units">кг</span></p></div>
-            </div>
+            </article>
+            <p class="cards__text cards__text--stuffing js-inactive">Филе из цыплят с трюфелями в бульоне.</p>
+            <p class="cards__text cards__text-buy js-inactive">Чего сидишь? Порадуй котэ, <a href="#" class="cards__text-link" tabindex="0">купи.</a></p>
+            <p class="cards__text cards__text--out-of-stock js-active">Печалька, с курой закончился.</p>
           </div>
-          <p class="cards__text cards__text--stuffing js-inactive">Филе из цыплят с трюфелями в бульоне.</p>
-          <p class="cards__text cards__text-buy js-inactive">Чего сидишь? Порадуй котэ, <a href="#" class="cards__text-link" tabindex="0">купи.</a></p>
-          <p class="cards__text cards__text--out-of-stock js-active">Печалька, с курой закончился.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
   <script src="js/script.min.js" defer></script>
 </body>
+
 </html>

@@ -77,6 +77,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
+  margin-left: 0;
+  margin-right: 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -119,6 +121,7 @@ body {
   width: 320px;
   height: 480px;
   margin: 0 auto;
+  margin-bottom: 0.9375rem;
   border-radius: 10px;
   cursor: pointer; }
   .food-card--default {
@@ -136,6 +139,7 @@ body {
     position: absolute;
     top: 4px;
     left: 4px;
+    overflow: hidden;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 312px;
@@ -146,8 +150,8 @@ body {
     background: linear-gradient(135deg, transparent 29px, #f2f2f2 29px); }
   .food-card__img {
     position: absolute;
-    bottom: 0;
-    left: 0; }
+    bottom: -6px;
+    left: -3px; }
   .food-card__promo {
     letter-spacing: 0.01px;
     color: #666666;
@@ -225,9 +229,5 @@ body {
   .cards__wrapper {
     margin-left: 2rem;
     margin-right: 2rem; } }
-  @media (max-width: 480px) {
-  .cards__wrapper {
-    margin-left: 0;
-    margin-right: 0; } }
 
 /*# sourceMappingURL=style.css.map */
