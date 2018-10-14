@@ -8,9 +8,8 @@ var outOfStock = document.querySelectorAll('.cards__text--out-of-stock');
 function clickActive() {
   cards.forEach(function(card, i) {
     var weight = card.querySelector('.food-card__weight')
-
-    // JQuery для проверки наличия класса
-    if ($(outOfStock[i]).hasClass('js-active')) {
+    
+    if(outOfStock[i].classList.contains('js-active')) {
       return false;
     } else {
       card.addEventListener('click', function() {
@@ -33,7 +32,7 @@ clickCheckAndHover()
 function clickCheckAndHover() {
   cards.forEach(function(card) {
     var weight = card.querySelector('.food-card__weight')
-    if ($(card).hasClass('food-card--selected')) {
+    if (card.classList.contains('food-card--selected')) {
         card.addEventListener('click', function() {
           this.querySelector('.food-card__promo-food').style.display = 'block'
           this.querySelector('.food-card__promo-cat').style.display = 'none'
@@ -51,7 +50,7 @@ function clickCheckAndHover() {
         this.querySelector('.food-card__promo-food').style.display = 'block'
         this.querySelector('.food-card__promo-cat').style.display = 'none'
       })
-    } else if ($(card).hasClass('food-card--default')) {
+    } else if (card.classList.contains('food-card--default')) {
       card.addEventListener('mouseenter', function() {
         this.classList.add('food-card--hover')
         this.classList.remove('food-card--selected-hover')
