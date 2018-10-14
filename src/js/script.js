@@ -22,8 +22,6 @@ function clickActive() {
         weight.classList.toggle('food-card__weight--selected-hover')
         stuff[i].classList.toggle('js-inactive')
         buy[i].classList.toggle('js-inactive')
-        this.querySelector('.food-card__promo-food').classList.toggle('js-inactive')
-        this.querySelector('.food-card__promo-cat').classList.toggle('js-active')
         clickCheckAndHover()
       })
     }
@@ -35,7 +33,6 @@ clickCheckAndHover()
 function clickCheckAndHover() {
   cards.forEach(function(card) {
     var weight = card.querySelector('.food-card__weight')
-
     if ($(card).hasClass('food-card--selected')) {
         card.addEventListener('click', function() {
           this.querySelector('.food-card__promo-food').style.display = 'block'
