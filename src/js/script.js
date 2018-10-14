@@ -38,12 +38,16 @@ function clickCheckAndHover() {
 
     if ($(card).hasClass('food-card--selected')) {
       card.addEventListener('mouseover', function() {
-        this.classList.remove('food-card--hover')
-        this.classList.add('food-card--selected-hover')
-        weight.classList.add('food-card__weight--selected-hover')
-        this.querySelector('.food-card__promo-food').style.display = 'none'
-        this.querySelector('.food-card__promo-cat').style.display = 'block'
-      })
+        card.addEventListener('click', function() {
+          this.querySelector('.food-card__promo-food').style.display = 'block'
+          this.querySelector('.food-card__promo-cat').style.display = 'none'
+        })
+          this.classList.remove('food-card--hover')
+          this.classList.add('food-card--selected-hover')
+          weight.classList.add('food-card__weight--selected-hover')
+          this.querySelector('.food-card__promo-food').style.display = 'none'
+          this.querySelector('.food-card__promo-cat').style.display = 'block'
+        })
       card.addEventListener('mouseout', function() {
         this.classList.remove('food-card--selected-hover')
         weight.classList.remove('food-card__weight--selected-hover')
