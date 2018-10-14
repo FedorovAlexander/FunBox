@@ -37,25 +37,25 @@ function clickCheckAndHover() {
     var weight = card.querySelector('.food-card__weight')
 
     if ($(card).hasClass('food-card--selected')) {
-      card.addEventListener('mouseover', function() {
         card.addEventListener('click', function() {
           this.querySelector('.food-card__promo-food').style.display = 'block'
           this.querySelector('.food-card__promo-cat').style.display = 'none'
         })
+        card.addEventListener('mouseenter', function() {
           this.classList.remove('food-card--hover')
           this.classList.add('food-card--selected-hover')
           weight.classList.add('food-card__weight--selected-hover')
           this.querySelector('.food-card__promo-food').style.display = 'none'
           this.querySelector('.food-card__promo-cat').style.display = 'block'
         })
-      card.addEventListener('mouseout', function() {
+      card.addEventListener('mouseleave', function() {
         this.classList.remove('food-card--selected-hover')
         weight.classList.remove('food-card__weight--selected-hover')
         this.querySelector('.food-card__promo-food').style.display = 'block'
         this.querySelector('.food-card__promo-cat').style.display = 'none'
       })
     } else if ($(card).hasClass('food-card--default')) {
-      card.addEventListener('mouseover', function() {
+      card.addEventListener('mouseenter', function() {
         this.classList.add('food-card--hover')
         this.classList.remove('food-card--selected-hover')
         weight.classList.add('food-card__weight--default-hover')
@@ -63,7 +63,7 @@ function clickCheckAndHover() {
         this.querySelector('.food-card__promo-food').style.display = 'block'
         this.querySelector('.food-card__promo-cat').style.display = 'none'
       })
-      card.addEventListener('mouseout', function() {
+      card.addEventListener('mouseleave', function() {
         this.classList.remove('food-card--hover')
         weight.classList.remove('food-card__weight--default-hover')
       })
