@@ -3,13 +3,13 @@
 Будет обработан при сборке: в url() будет подставлена base64 кодированная версия указанного файла
 */
 
-@font-face {
-  font-family: 'Trebuchet MS';
-  src: url('Trebuchet-MS.woff') format('woff');
+/* @font-face {
+  font-family: 'Trebuchet';
+  src: url('./Trebuchet-MS.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 @font-face {
   font-family: 'Exo';

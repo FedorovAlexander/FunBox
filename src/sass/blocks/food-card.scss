@@ -52,7 +52,7 @@
 
     color: $description-text-color;
 
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: 'Trebuchet', sans-serif;
     font-size: 1rem;
   }
   &__promo-cat {
@@ -62,7 +62,7 @@
   }
   &__title {
 
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: Trebuchet MS, sans-serif;
     font-size: 3rem;
 
     margin-top: 5px;
@@ -71,7 +71,7 @@
   &__stuffing {
     margin-bottom: 1.125rem;
 
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: 'Trebuchet', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 0.9;
@@ -79,7 +79,7 @@
   &__description-item {
     color: $description-text-color;
 
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: 'Trebuchet', sans-serif;
     font-size: 0.875rem;;
   }
   &__description-number {
@@ -103,7 +103,7 @@
     color: #fff;
     border-radius: 5rem;
 
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: 'Trebuchet', sans-serif;
     line-height: 0.9;
   }
   &__weight--default {
