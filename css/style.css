@@ -99,7 +99,7 @@ body {
     letter-spacing: -0.5px;
     color: #fff;
     text-shadow: 0 0.063rem 0 #000000;
-    font-family: 'Trebuchet', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     font-size: 0.875rem; }
   .cards__text--out-of-stock {
     color: #ffff66; }
@@ -155,25 +155,25 @@ body {
   .food-card__promo {
     letter-spacing: 0.01px;
     color: #666666;
-    font-family: 'Trebuchet', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     font-size: 1rem; }
   .food-card__promo-cat {
     display: none;
     color: #e62e7a; }
   .food-card__title {
-    font-family: Trebuchet MS, sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     font-size: 3rem;
     margin-top: 5px;
     margin-bottom: 3px; }
   .food-card__stuffing {
     margin-bottom: 1.125rem;
-    font-family: 'Trebuchet', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 0.9; }
   .food-card__description-item {
     color: #666666;
-    font-family: 'Trebuchet', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     font-size: 0.875rem; }
   .food-card__description-number {
     font-weight: 700; }
@@ -191,7 +191,7 @@ body {
     text-align: center;
     color: #fff;
     border-radius: 5rem;
-    font-family: 'Trebuchet', sans-serif;
+    font-family: 'Trebuchet MS', sans-serif;
     line-height: 0.9; }
   .food-card__weight--default {
     background-color: #1698d9; }
